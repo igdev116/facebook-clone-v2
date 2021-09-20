@@ -22,7 +22,7 @@ router.delete('/logout', authController.logout);
 
 // @route GET api/auth
 // @desc Get current user
-// @access Public
+// @access Private
 router.get('/user', verifyToken, authController.getCurrentUser);
 
 // @route POST api/auth/token
