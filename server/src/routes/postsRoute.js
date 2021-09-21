@@ -27,7 +27,7 @@ router.delete('/:id', verifyToken, postsController.deletePost);
 
 // @route PATCH api/posts/:id
 // @desc Like post
-// @access Public
+// @access Private
 router.patch('/:id', postsController.likePost);
 
 module.exports = router;
